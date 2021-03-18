@@ -1,13 +1,17 @@
 # Introduction
 
-Vue Formulate Datetime is a [Vue Formulate][1] plugin that provides the
-[vue-datetime][2] UI into a `FormulateInput`.
+Vue Formulate Currency is a [Vue Formulate][1] plugin that provides the
+[vue-currency-input][2] UI into a `FormulateInput`.
 
 # Installation
 
 ## NPM
 ```sh
-npm install vue-formulate-datetime
+npm install vue-formulate-currency
+```
+## Yarn
+```sh
+yarn add vue-formulate-currency
 ```
 
 ## Add to Vue
@@ -18,31 +22,23 @@ As with any [Vue Formulate plugin][3]:
 import Vue from 'vue'
 import VueFormulate from '@braid/vue-formulate'
 
-import FormulateVueDatetimePlugin from '@cone2875/vue-formulate-datetime'
-
-// !important
-// Import the vue-datetime css
-import 'vue-datetime/dist/vue-datetime.css'
+import FormulateVueCurrencyPlugin from '@vicenterusso/vue-formulate-currency'
 
 Vue.use(VueFormulate, {
-    plugins: [ FormulateVueDatetimePlugin ]
+    plugins: [ FormulateVueCurrencyPlugin ]
 })
 ```
 
 # Usage
 
-Use `vue-datetime` as the input `type`. `vue-datetime` uses the `type` prop
-too, so we changed the name of this prop to `datetype`.
+Use `currency` as the input `type`. 
 
 ```html
-<FormulateInput
-    type="vue-datetime"
-    datetype="datetime"
-    />
+<FormulateInput type="currency" />
 ```
 
 It works as any other `FormulateInput`.
 
 [1]: https://vueformulate.com
-[2]: https://github.com/mariomka/vue-datetime
+[2]: https://dm4t2.github.io/vue-currency-input/
 [3]: https://vueformulate.com/guide/plugins/
