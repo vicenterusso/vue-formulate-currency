@@ -7,11 +7,11 @@ Vue Formulate Currency is a [Vue Formulate][1] plugin that provides the
 
 ## NPM
 ```sh
-npm install vue-formulate-currency
+npm install @vicenterusso/vue-formulate-currency
 ```
 ## Yarn
 ```sh
-yarn add vue-formulate-currency
+yarn add @vicenterusso/vue-formulate-currency
 ```
 
 ## Add to Vue
